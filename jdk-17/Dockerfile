@@ -1,5 +1,6 @@
 FROM maven:3.9.6-eclipse-temurin-17
 
+
 # Google Chrome
 
 ARG CHROME_VERSION=127.0.6533.72-1
