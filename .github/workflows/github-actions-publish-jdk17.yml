@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - [ 'jdk-17/**' ]
+  workflow_dispatch:
 
 jobs:
   push_to_registry:
