@@ -3,7 +3,7 @@ FROM maven:3.9.6-eclipse-temurin-11
 
 # Google Chrome
 
-ARG CHROME_VERSION=127.0.6533.72-1
+ARG CHROME_VERSION=128.0.6613.86
 RUN apt-get update -qqy
 RUN apt-get -qqy install gpg unzip
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
@@ -16,7 +16,7 @@ RUN sed -i 's/"$HERE\/chrome"/"$HERE\/chrome" --no-sandbox/g' /opt/google/chrome
 
 # ChromeDriver
 
-ARG CHROME_DRIVER_VERSION=127.0.6533.72
+ARG CHROME_DRIVER_VERSION=128.0.6613.86
 RUN wget -q -O /tmp/chromedriver.zip https://storage.googleapis.com/chrome-for-testing-public/$CHROME_DRIVER_VERSION/linux64/chromedriver-linux64.zip \
 	&& unzip /tmp/chromedriver.zip -d /opt \
 	&& rm /tmp/chromedriver.zip \
