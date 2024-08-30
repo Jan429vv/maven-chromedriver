@@ -22,6 +22,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./jdk-11
+          context: ./jdk17
           push: true
-          tags: janroeser/maven-chromedriver:11
+          tags: janroeser/maven-chromedriver:jdk17
