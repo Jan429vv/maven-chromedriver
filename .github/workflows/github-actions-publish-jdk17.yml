@@ -3,7 +3,7 @@ name: Publish Docker image
 on:
   push:
     paths:
-      - [ 'jdk-17/**' ]
+      - 'jdk-17/**'
   workflow_dispatch:
 
 jobs:
