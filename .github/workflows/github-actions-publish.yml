@@ -25,4 +25,4 @@ jobs:
         with:
           context: ./jdk-11
           push: true
-          tags: janroeser/maven-chromedriver:11
+          tags: janroeser/maven-chromedriver:jdk11
